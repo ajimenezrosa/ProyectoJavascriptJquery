@@ -11,10 +11,6 @@
 
 }
 
-body {
-    background: url('../img/hojas.jpg');
-    background-attachment: fixed;
-}
 
 #global {
     width: 65%;
@@ -30,7 +26,7 @@ body {
     font-size: 30px;
     letter-spacing: 4px;
     line-height: 75px;
-    background: #235E3D;
+    /* background: #235E3D; */
     color: white;
     text-align: center;
     width: 385px;
@@ -64,9 +60,7 @@ body {
     background: #333;
 }
 
-#menu ul li:hover {
-    background: #235E3D;
-}
+
 
 #menu a {
     display:  block;
@@ -104,6 +98,7 @@ body {
     margin-bottom: 20px;
     line-height: 22px;
     text-align: justify;
+    width: 65%;
 }
 
 .button-more {
@@ -111,7 +106,7 @@ body {
     text-align: center;
     display: block;
     padding: 15px;
-    background: #235E3D; 
+    /* background: #235E3D;  */
     color: white;
     text-decoration: none;
     margin-top: 10px;
@@ -192,4 +187,37 @@ footer {
 
 .bx-wrapper, .bx-viewport {
     height: 250px !important;
+}
+
+#selector-theme {
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.8);
+    width: 50px;
+    height: 100px;
+}
+
+#to-green,
+#to-red,
+#to-blue {
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#to-green{
+    background: #235E3D;
+}
+
+#to-red {
+    background: #CA3413;
+}
+
+#to-blue {
+    background: #1f87c4;
 }
