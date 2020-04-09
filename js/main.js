@@ -99,4 +99,35 @@ $(document).ready(function(){
         })
 
 
+
+        //login Falso
+        $("#login").submit(function(){
+            var name = $("#username").val();
+
+            localStorage.setItem("form_name", name);
+      
+            location.reload();
+            
+        });
+        
+        var nameUser = localStorage.getItem("form_name");
+        
+        if(nameUser !== null){
+            var about_parrafo = $("about p");
+            $("#about p").html("<br><strong>Bienvenido " + nameUser + "</strong>");
+            $("#about p").append("<br>");
+            $("#about p").append('<a href="#" id="logOut">Cerrar Session</a>');
+            
+            $("#login").hide();
+            
+            
+            $("#logOut").click(function(){
+                localStorage.clear();
+                location.reload();
+            })
+
+            // location.reload():
+
+        }
+        
 });
